@@ -105,35 +105,55 @@
     <section>
         <h2>Orçamento</h2>
         <form method="GET" action="">
-            <label for="nome">Nome</label>
-            <br>
-            <input type="text" name="name" id="name">
-            <br><br>
 
-            <label for="email">Email</label>
-            <br>
-            <input type="email" name="email" id="email">
-            <br><br>
+            <fieldset>
+                <legend>Dados do usuário</legend>
+                <label for="nome">Nome</label>
+                <br>
+                <input type="text" name="name" id="name">
+                <br><br>
 
-            <label for="date-of-pay">Data do pagamento</label>
-            <br>
-            <input type="date" name="date-of-pay" id="date">
-            <br><br>
+                <label for="email">Email</label>
+                <br>
+                <input type="email" name="email" id="email">
+                <br><br>
+            </fieldset>
 
-            <label for="date-of-withdrawal">Data de retirada</label>
-            <br>
-            <input type="date" name="date-of-withdrawal" id="date">
-            <br><br>
+            <fieldset>
+                <legend>Dados do orçamento</legend>
+                <label for="date-of-pay">Data do pagamento</label>
+                <br>
+                <input type="date" name="date-of-pay" id="date">
+                <br><br>
 
-            <label for="quantity">Quantidade</label>
-            <br>
-            <input type="number" name="quantity" id="quantity">
-            <br><br>
+                <label for="date-of-withdrawal">Data de retirada</label>
+                <br>
+                <input type="date" name="date-of-withdrawal" id="date">
+                <br><br>
 
-            <label for="comment">Comentário</label>
+                <label for="quantity">Quantidade</label>
+                <br>
+                <input type="number" name="quantity" id="quantity">
+                <br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend for="day-of-week">Qual melhor dia para contato?</legend>
+
+                <input type="checkbox" name="sunday" id="sunday" value="sunday"> Domingo
+                <br><input type="checkbox" name="monday" id="monday" value="monday"> Segunda-feira
+                <br><input type="checkbox" name="tuesday" id="tuesday" value="tuesday"> Terça-feira
+                <br><input type="checkbox" name="wednesday" id="wednesday" value="wednesday"> Quarta-feira
+                <br><input type="checkbox" name="thursday" id="thursday" value="thursday"> Quinta-feira
+                <br><input type="checkbox" name="friday" id="friday" value="friday"> Sexta-feira
+                <br><input type="checkbox" name="saturday" id="saturday" value="saturday"> Sábado
+            </fieldset>
+
             <br>
-            <textarea name="comment" id="" cols="15" rows="5"></textarea>
-            <br>
+                <label for="comment">Comentário</label>
+                <br>
+                <textarea name="comment" id="comment" cols="50" rows="5"></textarea>
+                <br>
             <button>Salvar</button>
         </form>
     </section>
